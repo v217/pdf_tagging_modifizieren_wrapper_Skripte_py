@@ -24,15 +24,15 @@ def youtube_dl_sync_archive(f1_name='/home/v/Sicherung/Ton_Film/youtube-dl_downl
         print('Eine der beiden Dateien existiert nicht', file=stderr)
         return
 
-    with open(f1, 'r'), open(f2, 'r'):
-        f1_r = f1.read_text()
-        f2_r = f2.read_text()
+    with open(f1, 'r') as ff1, open(f2, 'r') as ff2:
+        f1_r = ff1.read_text()
+        f2_r = ff2.read_text()
 
     f_s = (f1_s := ü(f1_r)) | (f2_s := ü(f2_r))
 
-    with open(f1, 'a'), open(f2, 'a'):
-        f1.write_text(üü(f_s, f1_s))
-        f2.write_text(üü(f_s, f2_s))
+    with open(f1, 'a') as ff1, open(f2, 'a') as ff2:
+        ff1.write_text(üü(f_s, f1_s))
+        ff2.write_text(üü(f_s, f2_s))
 
 
 if __name__ == "__main__":
