@@ -19,13 +19,12 @@ def bash_history_unique(x='/home/v/.bash_history', x_kopie='/home/v/.Sicherungsk
     '/home/v/.bash_history'
     '/home/v/.Sicherungskopie.bash_history'
     """
-    x = Path(x)
-    x_kopie = Path(x_kopie)
+
 
     copyfile(x, x_kopie)
 
     with open(x, 'r'):
-        x_r = x.read()
+        x_r = x.read() # Path Objekt hat keine read Methode
 
     with open(x, 'w'):
         x.write(ü(x_r))
