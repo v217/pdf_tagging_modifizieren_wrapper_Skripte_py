@@ -16,7 +16,7 @@ def duplikate_loeschen():  # r('set -xv; cd ' + cwd + ' ; fdupes -I .')
 
 
 def neuer_name(n: Path):
-    b = sub(r'MUSTER1|MUSTER2|[-_ .]+', ' ', n.stem)
+    b = sub(r'Muster1|Muster2|[-_ .]+', ' ', n.stem)
     b = "".join(c for c in b if c.isalnum() or c in erlaubte_zeichen).strip(erlaubte_zeichen + '.')
     if (neu := b + n.suffix.lower()) != n.name:
         return Path(neu)

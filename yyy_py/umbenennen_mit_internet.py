@@ -2,7 +2,7 @@
 from isbnlib import get_isbnlike, isbn_from_words, meta
 from subprocess import run
 from pathlib import Path
-from yyy_py.umbenennen import umbenennen, dateien, erlaubte_zeichen, punkt
+from .umbenennen import umbenennen, dateien, erlaubte_zeichen, punkt
 from pysnooper import snoop
 
 

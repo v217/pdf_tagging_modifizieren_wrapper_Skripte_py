@@ -2,8 +2,8 @@
 from shutil import move, copy2, rmtree, copystat
 from subprocess import run
 from pathlib import Path
-from yyy_py.pdf_nur_neu_hinzugekommene import md5_b, schon_fertig
-from yyy_py.umbenennen import punkt
+from .pdf_nur_neu_hinzugekommene import md5_b, schon_fertig
+from .umbenennen import punkt
 from tempfile import TemporaryDirectory
 from tempfile import mkdtemp
 from pysnooper import snoop

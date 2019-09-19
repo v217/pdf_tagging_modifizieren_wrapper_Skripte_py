@@ -2,8 +2,8 @@
 from subprocess import run
 from itertools import groupby
 from os import remove
-from yyy_py.umbenennen import punkt
-from yyy_py.pdf_nur_neu_hinzugekommene import schon_fertig
+from .umbenennen import punkt
+from .pdf_nur_neu_hinzugekommene import schon_fertig
 from pathlib import Path  # nur für type hint importiert
 from pysnooper import snoop
 

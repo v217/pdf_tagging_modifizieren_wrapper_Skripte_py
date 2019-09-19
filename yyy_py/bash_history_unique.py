@@ -11,11 +11,6 @@ def ü(x: str):
 
 def bash_history_unique(x='/home/v/.bash_history', x_kopie='/home/v/.Sicherungskopie.bash_history'): # fire erkennt keine Path Objekte
     """
-    python3.8 bash_history_unique.py bash_history_unique
-
-    python3.8 bash_history_unique.py bash_history_unique '/home/v/.bash_history' '/home/v/.Sicherungskopie.bash_history'
-
-
     '/home/v/.bash_history'
     '/home/v/.Sicherungskopie.bash_history'
     """

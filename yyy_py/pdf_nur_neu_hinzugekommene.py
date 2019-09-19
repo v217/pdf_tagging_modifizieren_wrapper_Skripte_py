@@ -3,7 +3,7 @@ from shutil import move, copy2, copystat
 from subprocess import run
 from re import compile
 from pathlib import Path
-from yyy_py.umbenennen import umbenennen, punkt
+from .umbenennen import umbenennen, punkt
 from tempfile import TemporaryDirectory
 from tempfile import mkdtemp
 from hashlib import md5
